@@ -1,0 +1,18 @@
+@font-face{font-family:"ph";src:url("icons.woff2") format("woff2");font-display:block}
+.ph{font-family:"ph"!important;font-style:normal;font-weight:normal;line-height:1;speak:never;-webkit-font-smoothing:antialiased;display:inline-block}
+.ph-steam-logo:before{content:"\ead4"}
+.ph-x-logo:before{content:"\e4bc"}
+.ph-youtube-logo:before{content:"\e4fc"}
+.ph-tiktok-logo:before{content:"\eaf2"}
+.ph-instagram-logo:before{content:"\e2d0"}
+.ph-download-simple:before{content:"\e20c"}
+.ph-play:before{content:"\e3d0"}
+.ph-envelope-simple:before{content:"\e218"}
+.ph-arrow-left:before{content:"\e058"}
+.ph-arrow-right:before{content:"\e06c"}
+.ph-x:before{content:"\e4f6"}
+.ph-copy:before{content:"\e1ca"}
+.ph-check:before{content:"\e182"}
+.ph-file-zip:before{content:"\e958"}
+.ph-arrow-square-out:before{content:"\e5de"}
+.ph-caret-down:before{content:"\e136"}
