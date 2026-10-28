@@ -79,6 +79,14 @@ p,li{font-size:34px;line-height:1.35;margin:0}
 .btns{display:flex;gap:22px;flex-wrap:wrap}
 .btn{font:400 34px 'Dela Gothic One';color:var(--ink);background:var(--yel);border:5px solid #000;border-radius:16px;box-shadow:8px 8px 0 #000;padding:22px 34px;text-decoration:none}
 .btn.p{background:var(--pink);color:#fff}.btn.c{background:var(--cyan)}.btn.w{background:var(--paper)}
+/* phones (vertical shorts) */
+.phones{position:absolute;left:900px;right:70px;top:130px;bottom:90px;display:flex;justify-content:center;align-items:center;gap:34px}
+.phone{position:relative;margin:0;width:280px;aspect-ratio:9/16;background:#000;border:10px solid #000;border-radius:40px;box-shadow:12px 12px 0 #000,0 0 0 4px var(--paper);overflow:visible}
+.phone.big{width:318px;z-index:2}
+.phone video,.phone .print-img{width:100%;height:100%;object-fit:cover;border-radius:30px}
+.phone video{display:block}
+.phone:before{content:"";position:absolute;top:10px;left:50%;width:70px;height:16px;margin-left:-35px;border-radius:10px;background:#000;z-index:3}
+.phone figcaption{position:absolute;left:50%;bottom:-30px;transform:translateX(-50%) rotate(-3deg);font:700 22px Rubik;color:var(--ink);background:var(--yel);border:4px solid #000;border-radius:999px;padding:4px 16px;box-shadow:4px 4px 0 #000;white-space:nowrap}
 @media print{
   @page{size:1920px 1080px;margin:0}
   html,body{background:#000}
@@ -238,7 +246,7 @@ p,li{font-size:34px;line-height:1.35;margin:0}
 
 <!-- 8 SHORT-FORM -->
 <section class="wrap"><div class="slide">
-  <div class="pad" style="width:840px;right:auto">
+  <div class="pad" style="width:760px;right:auto">
     <span class="kick pink"><span lang="en">Marketing test-ready</span><span lang="ru">Готовы к маркетинговому тесту</span></span>
     <h2 style="font-size:78px"><span lang="en">Made for short-form video</span><span lang="ru">Создана для коротких роликов</span></h2>
     <ul style="margin-top:34px;padding-left:34px">
@@ -248,8 +256,11 @@ p,li{font-size:34px;line-height:1.35;margin:0}
       <li style="margin-top:14px"><span lang="en">Steam page live since Oct 27, 2026 — now in 9 languages.</span><span lang="ru">Страница в Steam открыта с 27 октября 2026, теперь на 9 языках.</span></li>
     </ul>
   </div>
-  <div class="frame tilt-r" style="position:absolute;left:1040px;top:120px;width:780px;height:439px"><video data-src="../files/loops/trex_power.mp4" muted loop playsinline poster="img/trex_power.jpg"></video><img class="print-img" src="img/trex_power.jpg" alt=""></div>
-  <div class="frame tilt-l" style="position:absolute;left:1120px;top:600px;width:640px;height:360px"><video data-src="../files/loops/orbit_slam.mp4" muted loop playsinline poster="img/orbit_slam.jpg"></video><img class="print-img" src="img/orbit_slam.jpg" alt=""></div>
+  <div class="phones">
+    <figure class="phone" style="transform:rotate(-4deg) translateY(40px)"><video data-src="vid/short_grow_EN_v2.mp4" muted loop playsinline poster="img/short_grow_EN_v2.jpg"></video><img class="print-img" src="img/short_grow_EN_v2.jpg" alt=""><figcaption>Shorts</figcaption></figure>
+    <figure class="phone big"><video data-src="vid/short_legendary_EN_v1.mp4" muted loop playsinline poster="img/short_legendary_EN_v1.jpg"></video><img class="print-img" src="img/short_legendary_EN_v1.jpg" alt=""><figcaption>TikTok</figcaption></figure>
+    <figure class="phone" style="transform:rotate(4deg) translateY(40px)"><video data-src="vid/short_powers_EN_v1.mp4" muted loop playsinline poster="img/short_powers_EN_v1.jpg"></video><img class="print-img" src="img/short_powers_EN_v1.jpg" alt=""><figcaption>Reels</figcaption></figure>
+  </div>
   <div class="pnum">09</div>
 </div></section>
 
