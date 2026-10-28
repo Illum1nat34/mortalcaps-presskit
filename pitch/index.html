@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortal Caps — Pitch Deck</title>
+<meta name="description" content="Mortal Caps — a cozy incremental about the collectible caps of the '90s. Pitch deck by FunFactor.">
+<meta property="og:title" content="Mortal Caps — Pitch Deck">
+<meta property="og:description" content="Slam. Flip. Collect. A cozy incremental about the collectible caps of the '90s.">
+<meta property="og:image" content="https://illum1nat34.github.io/mortalcaps-presskit/og.jpg">
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../vendor/fonts/fonts.css">
+<style>
+:root{--ink:#17111e;--paper:#f7f0dd;--yel:#ffd02e;--pink:#ff2e88;--cyan:#45b4ff;--purple:#8a4bff;--green:#3bc46b;--orange:#ff8a1e}
+*{box-sizing:border-box}
+html,body{margin:0;background:#0d0911;color:var(--paper);font-family:Rubik,system-ui,sans-serif}
+html[data-lang=en] [lang=ru],html[data-lang=ru] [lang=en]{display:none!important}
+.bar{position:fixed;top:12px;right:12px;z-index:50;display:flex;gap:8px}
+.bar a,.bar button{font:700 14px Rubik,sans-serif;color:var(--ink);background:var(--paper);border:3px solid var(--ink);border-radius:10px;padding:8px 12px;cursor:pointer;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}
+.bar .on{background:var(--yel)}
+.deck{display:flex;flex-direction:column;align-items:center;gap:22px;padding:22px 0 60px}
+.wrap{width:min(100vw - 24px,1920px);aspect-ratio:16/9;position:relative;overflow:hidden;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.slide{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;background:var(--ink);
+  background-image:radial-gradient(rgba(255,255,255,.06) 2px,transparent 2.5px);background-size:22px 22px}
+.pad{position:absolute;inset:90px 110px}
+h1,h2,.big{font-family:'Dela Gothic One',Impact,sans-serif;font-weight:400;margin:0;line-height:1.02;letter-spacing:-.5px}
+h2{font-size:86px}
+.kick{display:inline-block;font:700 26px Rubik,sans-serif;color:var(--ink);background:var(--yel);border:4px solid var(--ink);box-shadow:6px 6px 0 #000;padding:8px 20px;border-radius:10px;transform:rotate(-2deg);margin-bottom:26px;text-transform:uppercase;letter-spacing:1px}
+.kick.pink{background:var(--pink);color:#fff}.kick.cyan{background:var(--cyan)}.kick.green{background:var(--green)}
+p,li{font-size:34px;line-height:1.35;margin:0}
+.muted{color:#c9bfd8}
+.card{background:var(--paper);color:var(--ink);border:5px solid #000;border-radius:20px;box-shadow:10px 10px 0 #000;padding:30px 34px}
+.frame{border:7px solid #000;border-radius:18px;box-shadow:12px 12px 0 #000;overflow:hidden;background:#000}
+.frame video,.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.tilt-l{transform:rotate(-2.2deg)}.tilt-r{transform:rotate(1.8deg)}
+.hl{color:var(--yel)}.hp{color:var(--pink)}.hc{color:var(--cyan)}
+.src{position:absolute;left:110px;bottom:34px;font-size:18px;color:#8f84a3}
+.src a{color:#8f84a3}
+.pnum{position:absolute;right:46px;bottom:30px;font:400 24px 'Dela Gothic One';color:#4a3f5a}
+.print-img{display:none}
+/* cover */
+.cover{background:#000}
+.cover .bg{position:absolute;inset:0;background:url(../files/art/keyart_mortalcaps_slam_1920.jpg) center/cover}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,9,17,.92) 0%,rgba(13,9,17,.75) 38%,rgba(13,9,17,.05) 70%)}
+.cover .logo{position:absolute;left:110px;top:110px;width:760px}
+.cover .tag{position:absolute;left:118px;top:470px;font:400 76px 'Dela Gothic One';color:var(--yel);text-shadow:6px 6px 0 #000}
+.cover .one{position:absolute;left:118px;top:585px;width:800px;font-size:36px;line-height:1.3}
+.chips{position:absolute;left:118px;top:820px;display:flex;flex-wrap:wrap;gap:12px;width:1000px}
+.chip{font:700 24px Rubik;color:var(--ink);background:var(--paper);border:4px solid #000;border-radius:999px;padding:8px 22px;box-shadow:4px 4px 0 #000}
+.chip.y{background:var(--yel)}.chip.p{background:var(--pink);color:#fff}
+.cover .by{position:absolute;left:118px;bottom:70px;font:700 26px Rubik;color:#c9bfd8;letter-spacing:2px}
+/* loop */
+.steps{position:absolute;left:110px;right:110px;top:300px;display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+.step .frame{height:250px}
+.step .n{font:400 64px 'Dela Gothic One';color:var(--yel);margin:26px 0 6px}
+.step b{display:block;font:400 36px 'Dela Gothic One';margin-bottom:8px}
+.step p{font-size:28px;color:#d9d0e6}
+.arrow{position:absolute;top:118px;right:-32px;font:400 54px 'Dela Gothic One';color:var(--pink)}
+/* numbers */
+.nums{position:absolute;left:110px;right:110px;top:290px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.num{padding:30px 30px 26px}
+.num .big{font-size:96px;color:var(--ink)}
+.num span.l{display:block;font:700 28px Rubik;margin-top:8px;color:#3d3348}
+.num.y{background:var(--yel)}.num.p{background:var(--pink)}.num.p .big,.num.p span.l{color:#fff}.num.c{background:var(--cyan)}
+/* comps */
+.comps{position:absolute;left:110px;right:110px;top:285px;display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.comp h3{font:400 40px 'Dela Gothic One';margin:0 0 6px}
+.comp .meta{font:700 22px Rubik;color:#6b5f78;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px}
+.comp p{font-size:29px}
+.comp .k{font:400 42px 'Dela Gothic One';color:var(--pink)}
+/* roadmap */
+.road{position:absolute;left:110px;right:110px;top:300px;display:grid;grid-template-columns:1.05fr 1fr;gap:50px}
+.road ul{list-style:none;padding:0;margin:0}
+.road li{font-size:31px;padding:12px 0 12px 54px;position:relative;border-bottom:3px dashed rgba(0,0,0,.18)}
+.road li:last-child{border:0}
+.road li:before{content:"";position:absolute;left:0;top:18px;width:30px;height:30px;border-radius:50%;border:4px solid #000;background:var(--green)}
+.road .todo li:before{background:var(--yel)}
+.road .when{font:400 26px 'Dela Gothic One';color:var(--pink);display:block}
+.btns{display:flex;gap:22px;flex-wrap:wrap}
+.btn{font:400 34px 'Dela Gothic One';color:var(--ink);background:var(--yel);border:5px solid #000;border-radius:16px;box-shadow:8px 8px 0 #000;padding:22px 34px;text-decoration:none}
+.btn.p{background:var(--pink);color:#fff}.btn.c{background:var(--cyan)}.btn.w{background:var(--paper)}
+@media print{
+  @page{size:1920px 1080px;margin:0}
+  html,body{background:#000}
+  .bar{display:none}
+  .deck{display:block;padding:0}
+  .wrap{width:1920px!important;height:1080px;aspect-ratio:auto;border-radius:0;box-shadow:none;page-break-after:always;break-after:page}
+  .slide{transform:none!important}
+  video{display:none!important}.print-img{display:block!important}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <button data-set="en">EN</button><button data-set="ru">RU</button>
+  <a lang="en" href="MortalCaps_PitchDeck_EN.pdf" download>PDF</a><a lang="ru" href="MortalCaps_PitchDeck_RU.pdf" download>PDF</a>
+</div>
+<main class="deck">
+
+<!-- 1 COVER -->
+<section class="wrap"><div class="slide cover">
+  <div class="bg"></div><div class="shade"></div>
+  <img class="logo" src="../files/logo/mortalcaps_logo_1000.png" alt="Mortal Caps">
+  <div class="tag"><span lang="en">Slam. Flip. Collect.</span><span lang="ru">Бей. Переворачивай. Собирай.</span></div>
+  <div class="one"><span lang="en">A cozy incremental about the collectible caps of the '90s — one slam sends a whole stack flying, and every cap that lands face up pays out.</span><span lang="ru">Уютная инкременталка про коллекционные фишки 90-х: один удар — и вся стопка в воздухе, а каждая фишка, упавшая лицом вверх, приносит деньги.</span></div>
+  <div class="chips">
+    <span class="chip y">PC · Steam</span>
+    <span class="chip"><span lang="en">Incremental · Collection</span><span lang="ru">Инкременталка · коллекция</span></span>
+    <span class="chip"><span lang="en">Premium, no IAP</span><span lang="ru">Премиум, без доната</span></span>
+    <span class="chip p"><span lang="en">8 languages</span><span lang="ru">8 языков</span></span>
+    <span class="chip"><span lang="en">Next Fest Feb 2027</span><span lang="ru">Next Fest, февраль 2027</span></span>
+  </div>
+  <div class="by">FUNFACTOR · <span lang="en">PITCH DECK</span><span lang="ru">ПИТЧ-ДЕК</span> · 2026</div>
+</div></section>
+
+<!-- 2 HOOK -->
+<section class="wrap"><div class="slide">
+  <div class="pad" style="right:auto;width:700px">
+    <span class="kick pink"><span lang="en">The hook</span><span lang="ru">Крючок</span></span>
+    <h2><span lang="en">One slam.<br><span class="hl">108 caps</span><br>in the air.</span><span lang="ru">Один удар.<br><span class="hl">108 фишек</span><br>в воздухе.</span></h2>
+    <ul style="margin-top:40px;padding-left:34px">
+      <li><span lang="en">Real 3D physics: the stack bursts, caps spin and flip — every face-up cap pays.</span><span lang="ru">Настоящая 3D-физика: стопка разлетается, фишки крутятся — каждая лицом вверх платит.</span></li>
+      <li style="margin-top:16px"><span lang="en">Reads in one second, without sound — built for Shorts, TikTok and Reels.</span><span lang="ru">Считывается за секунду и без звука — готовый формат для Shorts, TikTok, Reels.</span></li>
+      <li style="margin-top:16px"><span lang="en">'90s caps nostalgia + grotesque monster art.</span><span lang="ru">Ностальгия по фишкам 90-х + гротескные монстры.</span></li>
+    </ul>
+  </div>
+  <div class="frame tilt-r" style="position:absolute;left:880px;top:150px;width:930px;height:524px">
+    <video data-src="../files/loops/big_slam.mp4" muted loop playsinline poster="img/big_slam.jpg"></video><img class="print-img" src="img/big_slam.jpg" alt="">
+  </div>
+  <div class="frame tilt-l" style="position:absolute;left:1180px;top:700px;width:560px;height:315px">
+    <video data-src="../files/loops/stack_108.mp4" muted loop playsinline poster="img/stack_108.jpg"></video><img class="print-img" src="img/stack_108.jpg" alt="">
+  </div>
+  <div class="pnum">02</div>
+</div></section>
+
+<!-- POSITIONING -->
+<section class="wrap"><div class="slide">
+  <div class="pad"><span class="kick pink"><span lang="en">Positioning</span><span lang="ru">Позиционирование</span></span>
+    <h2 style="font-size:78px"><span lang="en">The '90s caps craze, rebuilt as a<br><span class="hl">number-go-up</span> toy</span><span lang="ru">Фишки 90-х, пересобранные<br>в <span class="hl">залипательную инкременталку</span></span></h2></div>
+  <div class="comps" style="top:380px;grid-template-columns:repeat(3,1fr)">
+    <div class="card comp"><div class="meta"><span lang="en">Who plays</span><span lang="ru">Кто играет</span></div>
+      <p><span lang="en">Incremental fans (Gnorp, Bills Must Be Paid, Gamblers Table) · pack-opening &amp; collection fans · players who traded caps on the playground in the '90s</span><span lang="ru">Фанаты инкременталок (Gnorp, Bills Must Be Paid, Gamblers Table) · любители вскрывать паки и собирать коллекции · те, кто менялся фишками во дворе <span style="white-space:nowrap">в 90-е</span></span></p></div>
+    <div class="card comp"><div class="meta"><span lang="en">Why they stay</span><span lang="ru">Почему залипают</span></div>
+      <p><span lang="en">The physical chaos of every slam · the pull — hunting rarities in packs · completion — filling the magazine, series by series</span><span lang="ru">Физический хаос каждого удара · охота за редкостями в паках · коллекционирование — журнал заполняется серия за серией</span></p></div>
+    <div class="card comp" style="background:var(--yel)"><div class="meta" style="color:#3d3348"><span lang="en">Promotion idea</span><span lang="ru">Идея продвижения</span></div>
+      <p><span lang="en"><b>"The playground craze is back."</b> Every slam is a one-second clip; legendary pulls, 108-cap rain and champion duels are made for Shorts and streams.</span><span lang="ru"><b>«Фишки снова во дворе».</b> Каждый удар — готовый секундный клип; легендарки из паков, дождь из 108 фишек и дуэли с чемпионами созданы для шортов и стримов.</span></p></div>
+  </div>
+    <div style="position:absolute;left:150px;right:150px;top:700px;display:flex;justify-content:space-between;align-items:center">
+    <img src="img/cap_rob_031.png" alt="" style="width:230px;transform:rotate(-8deg);filter:drop-shadow(8px 10px 0 #000)">
+    <img src="img/cap_mut_120.png" alt="" style="width:250px;transform:rotate(6deg) translateY(30px);filter:drop-shadow(8px 10px 0 #000)">
+    <img src="img/cap_pir_023.png" alt="" style="width:230px;transform:rotate(-4deg);filter:drop-shadow(8px 10px 0 #000)">
+    <img src="img/cap_kai_039.png" alt="" style="width:250px;transform:rotate(9deg) translateY(24px);filter:drop-shadow(8px 10px 0 #000)">
+    <img src="img/cap_sea_108.png" alt="" style="width:230px;transform:rotate(-7deg);filter:drop-shadow(8px 10px 0 #000)">
+    <img src="img/cap_mut_002.png" alt="" style="width:240px;transform:rotate(5deg) translateY(16px);filter:drop-shadow(8px 10px 0 #000)">
+  </div>
+  <div class="pnum">03</div>
+</div></section>
+
+<!-- 3 LOOP -->
+<section class="wrap"><div class="slide">
+  <div class="pad"><span class="kick"><span lang="en">Core loop</span><span lang="ru">Основной цикл</span></span>
+    <h2 style="font-size:64px"><span lang="en">A run takes seconds. The pile keeps growing.</span><span lang="ru">Забег — секунды. Стопка растёт всегда.</span></h2></div>
+  <div class="steps">
+    <div class="step" style="position:relative"><div class="frame"><img src="img/stack_108.jpg" alt=""></div><div class="arrow">›</div>
+      <div class="n">1</div><b><span lang="en">Throw the stack</span><span lang="ru">Брось стопку</span></b><p><span lang="en">Your whole collection lands on the table.</span><span lang="ru">Вся коллекция падает на стол.</span></p></div>
+    <div class="step" style="position:relative"><div class="frame"><img src="img/big_slam.jpg" alt=""></div><div class="arrow">›</div>
+      <div class="n">2</div><b><span lang="en">Slam</span><span lang="ru">Бей битой</span></b><p><span lang="en">Hold, release, chain combos and slammer powers.</span><span lang="ru">Зажми, отпусти, тяни комбо и силы бит.</span></p></div>
+    <div class="step" style="position:relative"><div class="frame"><img src="img/chain_lightning.jpg" alt=""></div><div class="arrow">›</div>
+      <div class="n">3</div><b><span lang="en">Flips pay</span><span lang="ru">Перевороты платят</span></b><p><span lang="en">Face-up caps pay by rarity and series; crits, golden caps.</span><span lang="ru">Фишки лицом вверх платят по редкости и серии; криты, золотые.</span></p></div>
+    <div class="step"><div class="frame"><img src="img/eight_packs_burst.jpg" alt=""></div>
+      <div class="n">4</div><b><span lang="en">Upgrade &amp; open packs</span><span lang="ru">Качайся и вскрывай паки</span></b><p><span lang="en">Bigger stack, wider slams, new caps — beat the district champion.</span><span lang="ru">Толще стопка, шире удар, новые фишки — победи чемпиона района.</span></p></div>
+  </div>
+  <div class="pnum">04</div>
+</div></section>
+
+<!-- 4 COLLECTION -->
+<section class="wrap"><div class="slide">
+  <div class="pad" style="width:620px;right:auto">
+    <span class="kick cyan"><span lang="en">The collection</span><span lang="ru">Коллекция</span></span>
+    <h2 style="font-size:66px"><span lang="en">Packs, pulls and a collector's magazine</span><span lang="ru">Паки, редкие выпадения и журнал коллекционера</span></h2>
+    <p style="margin-top:34px"><span lang="en"><b class="hl">216 caps</b> in 8 series, each in 4 finishes — common, holo, mosaic and a legendary 3D tunnel. Foil packs, display boxes, and an animated comic-magazine album with series coupons.</span><span lang="ru"><b class="hl">216 фишек</b> в 8 сериях, у каждой 4 отделки — обычная, голограмма, мозаика и легендарный 3D-тоннель. Фольговые паки, коробки-дисплеи и живой альбом-комикс с купонами серий.</span></p>
+  </div>
+  <div class="frame tilt-r" style="position:absolute;left:790px;top:110px;width:620px;height:349px"><video data-src="../files/loops/pack_pop.mp4" muted loop playsinline poster="img/pack_pop.jpg"></video><img class="print-img" src="img/pack_pop.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:1440px;top:150px;width:400px;height:225px"><video data-src="../files/loops/legendary_pull.mp4" muted loop playsinline poster="img/legendary_pull.jpg"></video><img class="print-img" src="img/legendary_pull.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:840px;top:520px;width:860px;height:484px"><video data-src="../files/loops/magazine_fills.mp4" muted loop playsinline poster="img/magazine_fills.jpg"></video><img class="print-img" src="img/magazine_fills.jpg" alt=""></div>
+  <div class="pnum">05</div>
+</div></section>
+
+<!-- 5 NUMBERS -->
+<section class="wrap"><div class="slide">
+  <div class="pad"><span class="kick green"><span lang="en">Content</span><span lang="ru">Контент</span></span>
+    <h2><span lang="en">A full game, not a prototype</span><span lang="ru">Полная игра, а не прототип</span></h2></div>
+  <div class="nums">
+    <div class="card num y"><div class="big">216</div><span class="l"><span lang="en">caps in 8 series</span><span lang="ru">фишек в 8 сериях</span></span></div>
+    <div class="card num"><div class="big">13</div><span class="l"><span lang="en">slammers with unique powers</span><span lang="ru">бит с уникальными силами</span></span></div>
+    <div class="card num p"><div class="big">8</div><span class="l"><span lang="en">districts &amp; champions — a story campaign</span><span lang="ru">районов и чемпионов — сюжетная кампания</span></span></div>
+    <div class="card num c"><div class="big">330+</div><span class="l"><span lang="en">upgrade levels on a 55-node tree</span><span lang="ru">уровней улучшений, дерево из 55 узлов</span></span></div>
+    <div class="card num"><div class="big"><span lang="en">~9h</span><span lang="ru">~9 ч</span></div><span class="l"><span lang="en">story · ~20 h to full collection</span><span lang="ru">сюжет · ~20 ч до полной коллекции</span></span></div>
+    <div class="card num y"><div class="big">73</div><span class="l"><span lang="en">Steam achievements · Cloud saves</span><span lang="ru">ачивки Steam · облачные сохранения</span></span></div>
+    <div class="card num c"><div class="big">8</div><span class="l">EN · RU · 简体中文 · 日本語 · ES · PT-BR · DE · FR</span></div>
+    <div class="card num p"><div class="big">4</div><span class="l"><span lang="en">rarities with real 3D finishes</span><span lang="ru">редкости с настоящими 3D-отделками</span></span></div>
+  </div>
+  <div class="src"><span lang="en">Playtime from our balance model and bot runs.</span><span lang="ru">Время прохождения — по нашей модели баланса и прогонам ботов.</span></div>
+  <div class="pnum">06</div>
+</div></section>
+
+<!-- 6 ART -->
+<section class="wrap"><div class="slide">
+  <div class="pad" style="width:560px;right:auto"><span class="kick pink"><span lang="en">Look</span><span lang="ru">Стиль</span></span>
+    <h2 style="font-size:76px"><span lang="en">'90s grotesque, comic-sticker UI</span><span lang="ru">Гротеск 90-х и интерфейс-наклейки</span></h2>
+    <p style="margin-top:30px" class="muted"><span lang="en">Robots, space pirates, kaiju, mutants, racers, sea monsters, dinosaurs and mutant bugs — in the spirit of the schoolyard caps everybody traded.</span><span lang="ru">Роботы, космопираты, кайдзю, мутанты, гонщики, морские чудища, динозавры и жуки-мутанты — в духе фишек, которыми менялся весь двор.</span></p></div>
+  <div class="frame tilt-r" style="position:absolute;left:720px;top:90px;width:560px;height:315px"><img src="../files/screenshots/mortalcaps_03_big_slam.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:1310px;top:120px;width:540px;height:304px"><img src="../files/screenshots/mortalcaps_05_legendary.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:740px;top:450px;width:540px;height:304px"><img src="../files/screenshots/mortalcaps_06_magazine.jpg" alt=""></div>
+  <div class="frame tilt-r" style="position:absolute;left:1300px;top:470px;width:560px;height:315px"><img src="../files/screenshots/mortalcaps_08_story.jpg" alt=""></div>
+  <div class="frame" style="position:absolute;left:110px;top:775px;width:460px;height:259px;transform:rotate(1deg)"><img src="../files/screenshots/mortalcaps_04_upgrades.jpg" alt=""></div>
+  <div class="pnum">07</div>
+</div></section>
+
+<!-- 7 MARKET -->
+<section class="wrap"><div class="slide">
+  <div class="pad"><span class="kick"><span lang="en">Why now</span><span lang="ru">Почему сейчас</span></span>
+    <h2 style="font-size:64px"><span lang="en">"Hit it → money → upgrades" is selling</span><span lang="ru">«Бей → деньги → улучшения» продаётся</span></h2></div>
+  <div class="comps">
+    <div class="card comp"><div class="meta">Jul 2026 · $6.99 · <span lang="en">2 devs</span><span lang="ru">2 разработчика</span></div><h3>Bills Must Be Paid</h3>
+      <p><span lang="en">Hammer piggy banks for money. <span class="k">61k+</span> wishlists at launch, <span class="k">330k</span> copies in 20 days.</span><span lang="ru">Бьёшь копилки молотком. <span class="k">61k+</span> вишлистов на старте, <span class="k">330k</span> копий за 20 дней.</span></p></div>
+    <div class="card comp"><div class="meta">Jan 2026 · $6.99 · <span lang="en">2 devs</span><span lang="ru">2 разработчика</span></div><h3>Gamblers Table</h3>
+      <p><span lang="en">Flip coins for money. <span class="k">10k</span> wishlists in 18 days from a web prototype.</span><span lang="ru">Подбрасываешь монеты. <span class="k">10k</span> вишлистов за 18 дней с веб-прототипа.</span></p></div>
+    <div class="card comp"><div class="meta">Dec 2023 · $6.99 · <span lang="en">solo</span><span lang="ru">соло</span></div><h3>The Gnorp Apologue</h3>
+      <p><span lang="en">Launched with ~1.7k wishlists — <span class="k">200k</span> copies in ~3.5 months via YouTube.</span><span lang="ru">Вышла с ~1,7k вишлистов — <span class="k">200k</span> копий за ~3,5 месяца на YouTube.</span></p></div>
+    <div class="card comp"><div class="meta">Apr 2024 · $6.99 · 11 <span lang="en">languages</span><span lang="ru">языков</span></div><h3>Rusty's Retirement</h3>
+      <p><span lang="en">Idle with full localization: China <span class="k">26%</span>, Japan <span class="k">10%</span> of sales.</span><span lang="ru">Idle с полной локализацией: Китай <span class="k">26%</span>, Япония <span class="k">10%</span> продаж.</span></p></div>
+  </div>
+  <p style="position:absolute;left:110px;right:110px;top:935px;font-size:27px"><span lang="en">Oct 2026: incremental YouTubers (Idle cub, Dex, MOREQUIS…) are covering pack-opening and coin games — our exact format.</span><span lang="ru">Октябрь 2026: ютуберы-инкременталщики (Idle cub, Dex, MOREQUIS…) снимают игры про паки и монеты — ровно наш формат.</span></p>
+  <div class="src">Sources: How To Market A Game (Aug 2026), Gamblers Table devlog, GameDiscoverCo, Steam announcements.</div>
+  <div class="pnum">08</div>
+</div></section>
+
+<!-- 8 SHORT-FORM -->
+<section class="wrap"><div class="slide">
+  <div class="pad" style="width:840px;right:auto">
+    <span class="kick pink"><span lang="en">Marketing test-ready</span><span lang="ru">Готовы к маркетинговому тесту</span></span>
+    <h2 style="font-size:78px"><span lang="en">Made for short-form video</span><span lang="ru">Создана для коротких роликов</span></h2>
+    <ul style="margin-top:34px;padding-left:34px">
+      <li><span lang="en">Hooks that land in 1 second: the slam, a legendary pull, 108 caps raining down.</span><span lang="ru">Крючки за 1 секунду: удар, легендарка из пака, дождь из 108 фишек.</span></li>
+      <li style="margin-top:14px"><span lang="en">Ready: trailer (EN/RU), 8 vertical shorts, 9 GIF loops, key art, capsules, press kit.</span><span lang="ru">Готово: трейлер (EN/RU), 8 вертикальных шортов, 9 GIF-петель, ключевой арт, капсулы, пресс-кит.</span></li>
+      <li style="margin-top:14px"><span lang="en">In-game shot director: new staged footage for any ad angle in hours.</span><span lang="ru">Режиссёр кадров в игре: новые постановочные съёмки под любой креатив за часы.</span></li>
+      <li style="margin-top:14px"><span lang="en">Steam page live since Oct 27, 2026 — now in 9 languages.</span><span lang="ru">Страница в Steam открыта с 27 октября 2026, теперь на 9 языках.</span></li>
+    </ul>
+  </div>
+  <div class="frame tilt-r" style="position:absolute;left:1040px;top:120px;width:780px;height:439px"><video data-src="../files/loops/trex_power.mp4" muted loop playsinline poster="img/trex_power.jpg"></video><img class="print-img" src="img/trex_power.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:1120px;top:600px;width:640px;height:360px"><video data-src="../files/loops/orbit_slam.mp4" muted loop playsinline poster="img/orbit_slam.jpg"></video><img class="print-img" src="img/orbit_slam.jpg" alt=""></div>
+  <div class="pnum">09</div>
+</div></section>
+
+<!-- 9 ROADMAP -->
+<section class="wrap"><div class="slide">
+  <div class="pad"><span class="kick green"><span lang="en">Status &amp; roadmap</span><span lang="ru">Статус и план</span></span>
+    <h2 style="font-size:64px"><span lang="en">The whole game is playable. Demo is next.</span><span lang="ru">Вся игра уже играется. Следующее — демо.</span></h2></div>
+  <div class="road">
+    <div class="card"><ul>
+      <li><span lang="en">Whole game playable start to finish: 8 districts, story, packs, album</span><span lang="ru">Вся игра проходится от начала до конца: 8 районов, сюжет, паки, альбом</span></li>
+      <li><span lang="en">Steam page live, build v0.7 on Steam, 73 achievements, Cloud</span><span lang="ru">Страница Steam открыта, сборка v0.7 в Steam, 73 ачивки, облако</span></li>
+      <li><span lang="en">Localized: EN, RU, zh-Hans, ja, es, pt-BR, de, fr — incl. pack &amp; album art</span><span lang="ru">Локализация: EN, RU, zh-Hans, ja, es, pt-BR, de, fr — включая арт паков и альбома</span></li>
+      <li><span lang="en">Balance tuned with bots: hundreds of simulated runs per pass</span><span lang="ru">Баланс выверен ботами: сотни симулированных забегов на каждый проход</span></li>
+    </ul></div>
+    <div class="card todo"><ul class="todo">
+      <li><span class="when"><span lang="en">Nov 2026</span><span lang="ru">Ноябрь 2026</span></span><span lang="en">Steam Playtest: first 2 districts (~1 h), surveys, polish</span><span lang="ru">Steam Playtest: первые 2 района (~1 ч), опросы, полировка</span></li>
+      <li><span class="when"><span lang="en">Dec 2026</span><span lang="ru">Декабрь 2026</span></span><span lang="en">Public demo · wishlist push</span><span lang="ru">Публичное демо · волна вишлистов</span></li>
+      <li><span class="when">Feb 22 – Mar 1, 2027</span><span lang="en">Steam Next Fest with an updated demo</span><span lang="ru">Steam Next Fest с обновлённым демо</span></li>
+      <li><span class="when"><span lang="en">After Next Fest</span><span lang="ru">После Next Fest</span></span><span lang="en">Release — date set with the partner</span><span lang="ru">Релиз — дату выбираем вместе с партнёром</span></li>
+    </ul></div>
+  </div>
+  <div class="pnum">10</div>
+</div></section>
+
+<!-- 10 TEAM -->
+<section class="wrap"><div class="slide">
+  <div class="pad" style="width:900px;right:auto"><span class="kick cyan"><span lang="en">Team</span><span lang="ru">Команда</span></span>
+    <h2><span lang="en">FunFactor — independent studio</span><span lang="ru">FunFactor — независимая студия</span></h2>
+    <ul style="margin-top:36px;padding-left:34px">
+      <li><span lang="en">Design, code, art direction, 3D, video and all marketing assets made in-house.</span><span lang="ru">Геймдизайн, код, арт-дирекшн, 3D, видео и все маркетинговые материалы — своими силами.</span></li>
+      <li style="margin-top:14px"><span lang="en">Unity 6 (URP), real-time 3D physics; fast tooling — bots for balance, shot director for marketing footage.</span><span lang="ru">Unity 6 (URP), 3D-физика в реальном времени; свои инструменты — боты для баланса, режиссёр кадров для роликов.</span></li>
+      <li style="margin-top:14px"><span lang="en">Art pipeline: illustrations created with AI tools, then curated and finished by hand; 3D slammers built from them. Disclosed on Steam.</span><span lang="ru">Арт-пайплайн: иллюстрации созданы с помощью ИИ-инструментов, отобраны и доработаны вручную; 3D-биты построены по ним. Раскрыто в Steam.</span></li>
+    </ul></div>
+  <div class="frame tilt-r" style="position:absolute;left:1120px;top:140px;width:700px;height:394px"><img src="../files/art/keyart_collector_showcase.jpg" alt=""></div>
+  <div class="frame tilt-l" style="position:absolute;left:1180px;top:590px;width:620px;height:349px"><img src="../files/screenshots/mortalcaps_01_late_power.jpg" alt=""></div>
+  <div class="pnum">11</div>
+</div></section>
+
+<!-- 11 LINKS -->
+<section class="wrap"><div class="slide cover">
+  <div class="bg" style="background-image:url(../files/art/keyart_collector_showcase.jpg)"></div><div class="shade" style="background:linear-gradient(90deg,rgba(13,9,17,.95) 0%,rgba(13,9,17,.85) 55%,rgba(13,9,17,.3) 100%)"></div>
+  <div class="pad" style="width:1100px;right:auto">
+    <img src="../files/logo/mortalcaps_logo_1000.png" alt="Mortal Caps" style="width:520px">
+    <h2 style="margin-top:30px;font-size:70px"><span lang="en">Let's run the test.</span><span lang="ru">Давайте проведём тест.</span></h2>
+    <p style="margin:24px 0 46px" class="muted"><span lang="en">The game, the page and the assets are ready — we are looking for a partner to put Mortal Caps in front of players.</span><span lang="ru">Игра, страница и материалы готовы — ищем партнёра, который покажет Mortal Caps игрокам.</span></p>
+    <div class="btns">
+      <a class="btn" href="https://store.steampowered.com/app/5495840/Mortal_Caps/?utm_source=pitch&amp;utm_medium=deck&amp;utm_campaign=publisher">Steam</a>
+      <a class="btn p" href="https://www.youtube.com/watch?v=Pik7e7LXuIk"><span lang="en">Trailer</span><span lang="ru">Трейлер</span></a>
+      <a class="btn c" href="https://illum1nat34.github.io/mortalcaps-presskit/"><span lang="en">Press kit</span><span lang="ru">Пресс-кит</span></a>
+      <a class="btn w" href="mailto:mortalcapsgame@gmail.com">mortalcapsgame@gmail.com</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+<script>
+(function () {
+  var html = document.documentElement, q = new URLSearchParams(location.search);
+  var lang = q.get('lang') || (/^ru|^uk|^be/i.test(navigator.language || '') ? 'ru' : 'en');
+  function setLang(l) { html.dataset.lang = l; html.lang = l; document.querySelectorAll('[data-set]').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); }); }
+  setLang(lang);
+  document.querySelectorAll('[data-set]').forEach(function (b) { b.onclick = function () { setLang(b.dataset.set); }; });
+  var wraps = [].slice.call(document.querySelectorAll('.wrap'));
+  function fit() { wraps.forEach(function (w) { w.firstElementChild.style.transform = 'scale(' + (w.clientWidth / 1920) + ')'; }); }
+  addEventListener('resize', fit); fit();
+  if (q.get('print')) {
+    var P = function (u) { var b = u.split('/').pop(); return 'img/p/' + (/^cap_|logo/.test(b) ? b : b.replace(/\.png$/, '.jpg')); };
+    document.querySelectorAll('img').forEach(function (i) { var u = i.getAttribute('src'); if (u) i.setAttribute('src', P(u)); });
+    document.querySelectorAll('.bg').forEach(function (d) { var m = (d.getAttribute('style') || '').match(/url\(([^)]+)\)/) || getComputedStyle(d).backgroundImage.match(/url\("?([^")]+)"?\)/); if (m) d.style.backgroundImage = 'url(' + P(m[1]) + ')'; });
+    return;
+  }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      e.target.querySelectorAll('video').forEach(function (v) {
+        if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(function () {}); } else v.pause();
+      });
+    });
+  }, { threshold: 0.35 });
+  wraps.forEach(function (w) { io.observe(w); });
+  addEventListener('keydown', function (e) {
+    var i = wraps.findIndex(function (w) { var r = w.getBoundingClientRect(); return r.top > -r.height / 2; });
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); (wraps[Math.min(wraps.length - 1, i + 1)] || wraps[0]).scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    if (e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); (wraps[Math.max(0, i - 1)]).scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  });
+})();
+</script>
+</body>
+</html>
