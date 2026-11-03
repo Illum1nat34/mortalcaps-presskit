@@ -15,13 +15,13 @@
 
 ## In one line
 
-A cozy incremental game about the collectible caps of the '90s: slam your stack, flip caps to earn coins, grow the pile to 108, open packs and collect 216 grotesque caps across eight series. Beat the champion of every district and become King of the Yard.
+An incremental game about the collectible caps of the '90s: slam your stack, flip caps to earn coins, grow the pile to 108, open packs and collect 216 grotesque caps across eight series. Beat the champion of every district and become King of the Yard.
 
 ## About the game
 
 **Slam. Flip. Collect.**
 
-Mortal Caps is a cozy incremental game about the collectible caps of the '90s. Every run is a few seconds of pure satisfaction: drop your stack on the table, hit it with your slammer and watch the caps flip. Every flipped cap pays out, and every coin goes into making the next slam even bigger.
+Mortal Caps is an incremental game about the collectible caps of the '90s. Every run is a few seconds of pure satisfaction: drop your stack on the table, hit it with your slammer and watch the caps flip. Every flipped cap pays out, and every coin goes into making the next slam even bigger.
 
 ## Key features
 
